@@ -1,0 +1,67 @@
+@media (max-width: 575px) {
+    .text-on-image {
+        width: revert;
+    }
+    hr#teammate_line_0 {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    hr#teammate_line_0 {
+        left: calc(-12em + 65px);
+        width: calc(82em + 67px);
+        top: calc(49em + 65px);
+    }
+}
+
+@media (min-width: 576px) {
+    .text-on-image {
+        width: revert;
+    }
+    hr#teammate_line_0 {
+        left: calc(-12em + 67px);
+        width: calc(82em + 68px);
+        top: calc(49em + 65px);
+    }
+}
+
+@media (min-width: 768px) {
+    .text-on-image {
+        width: revert;
+    }
+    hr#teammate_line_0 {
+        left: calc(-31em + 19px);
+        width: calc(102em + 92px);
+        top: calc(58em + 93px);
+    }
+}
+
+@media (min-width: 992px) {
+    .text-on-image {
+        width: 460px;
+        position: absolute;
+        right: 50px;
+    }
+    hr#teammate_line_0 {
+        left: calc(-17em + 30px);
+        width: calc(88em + 86px);
+        top: calc(51em + 91px);
+    }
+}
+
+@media (min-width: 1200px) {
+    hr#teammate_line_0 {
+        left: calc(-10em + 66px);
+        width: calc(82em + 65px);
+        top: calc(49em + 65px);
+    }
+}
+
+@media (min-width: 1400px) {
+    hr#teammate_line_0 {
+        left: calc(-10em + 45px);
+        width: calc(81em + 85px);
+        top: calc(49em + 65px);
+    }
+}

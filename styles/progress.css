@@ -1,0 +1,43 @@
+.my-progress {
+  width: auto;
+  height: 159px;
+  position: revert;
+}
+.end-progress {
+  background: rgba(56, 110, 250, 0.7);
+  backdrop-filter: blur(3.5px);
+  height: 159px;
+  width: 16px;
+}
+
+.during-progress {
+  background: #386efa;
+  box-shadow: 10px 0px 4px rgba(56, 110, 250, 0.12);
+  height: 159px;
+
+}
+
+.progress-bg {
+  background-color: var(--dark-color-2);
+}
+
+.precentage-txt {
+  color: var(--yellow-color);
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 71px;
+  top: 44px;
+  bottom: 44px;
+  right: 95px;
+  left: 95px;
+}
+.progress-title {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 41px;
+  color: var(--darker-header-color);
+}
