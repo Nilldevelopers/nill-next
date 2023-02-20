@@ -1,11 +1,17 @@
-import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
-// export default function App({ Component, pageProps }: AppProps) {
-//   return <Component {...pageProps} />
-// }
+
 
 import Head from "next/head";
+import '@/styles/bootstrap.min.css'
+import '@/styles/slider/sliderItem.css'
+import '@/styles/slider/contactSlider.css'
+import '@/styles/slider/customizeSlider.css'
+import '@/styles/button.css'
+import '@/styles/progress.css'
+import '@/styles/navbar/nav.css'
+import '@/styles/chatComments.css'
+import '@/styles/responsive.css'
 import '@/styles/globals.css'
 import '@/styles/animate_icon.scss'
 

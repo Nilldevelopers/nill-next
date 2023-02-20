@@ -1,7 +1,6 @@
-@charset "UTF-8";
 @import "swiper/css";
 @import "swiper/css/pagination";
-@import "./bootstrap.min.css";
+/* @import "./bootstrap.min.css";
 @import "./slider/sliderItem.css";
 @import "./slider/contactSlider.css";
 @import "./slider/customizeSlider.css";
@@ -9,7 +8,7 @@
 @import "./progress.css";
 @import "./navbar/nav.css";
 @import "./chatComments.css";
-@import "./responsive.css";
+@import "./responsive.css"; */
 :root {
     --light-color: #f5f5f5;
     --light-color-2: #ffffff;
