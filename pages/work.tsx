@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import GalleryFilter from "@/components/GalleryFilter";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
+import Element from "@/components/Element";
 
 const work = () => {
   return (
@@ -17,23 +18,7 @@ const work = () => {
             <div className="pt-5 pb-5">
               <div className="container m-auto">
                 <div className="pt-5">
-                  <svg
-                    width="56"
-                    height="8"
-                    viewBox="0 0 56 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="52" cy="4" r="4" fill="#fff"></circle>
-                    <line
-                      x1="49.5"
-                      y1="4.5"
-                      x2="0.5"
-                      y2="4.5"
-                      stroke="#fff"
-                      strokeLinecap="round"
-                    ></line>
-                  </svg>
+                  <Element theme="dark"/>
 
                   <span className={`${styles.eslipse} m-3 text-white`}>
                     خدمات ما

@@ -18,7 +18,7 @@ import {
   HomeSliderItem2,
   ProgressData,
 } from "@/data/data";
-
+import Element from "@/components/Element";
 export default function Home() {
   return (
     <>
@@ -75,23 +75,7 @@ export default function Home() {
         <section className={`${styles.bgLight} pt-5 pb-5`}>
           <div className="container">
             <div>
-              <svg
-                width="56"
-                height="8"
-                viewBox="0 0 56 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="52" cy="4" r="4" fill="#000"></circle>
-                <line
-                  x1="49.5"
-                  y1="4.5"
-                  x2="0.5"
-                  y2="4.5"
-                  stroke="#000"
-                  strokeLinecap="round"
-                ></line>
-              </svg>
+              <Element theme="light" />
 
               <span className={`${styles.eslipse} m-3`}>خدمات ما</span>
             </div>
@@ -128,23 +112,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div>
-                <svg
-                  width="56"
-                  height="8"
-                  viewBox="0 0 56 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="52" cy="4" r="4" fill="#fff"></circle>
-                  <line
-                    x1="49.5"
-                    y1="4.5"
-                    x2="0.5"
-                    y2="4.5"
-                    stroke="#fff"
-                    strokeLinecap="round"
-                  ></line>
-                </svg>
+              <Element theme="dark" />
 
                 <span className={`${styles.eslipse} m-3 text-white`}>
                   خدمات ما
@@ -196,23 +164,7 @@ export default function Home() {
         <section className={`${styles.bgLight} pt-5 pb-5`}>
           <div className="container">
             <div>
-              <svg
-                width="56"
-                height="8"
-                viewBox="0 0 56 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="52" cy="4" r="4" fill="#000"></circle>
-                <line
-                  x1="49.5"
-                  y1="4.5"
-                  x2="0.5"
-                  y2="4.5"
-                  stroke="#000"
-                  strokeLinecap="round"
-                ></line>
-              </svg>
+            <Element theme="light" />
 
               <span className={`${styles.eslipse} m-3`}>خدمات ما</span>
             </div>
@@ -263,23 +215,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div>
-                <svg
-                  width="56"
-                  height="8"
-                  viewBox="0 0 56 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="52" cy="4" r="4" fill="#fff"></circle>
-                  <line
-                    x1="49.5"
-                    y1="4.5"
-                    x2="0.5"
-                    y2="4.5"
-                    stroke="#fff"
-                    strokeLinecap="round"
-                  ></line>
-                </svg>
+              <Element theme="dark" />
 
                 <span className={`${styles.eslipse} m-3 text-white`}>بلاگ</span>
               </div>
