@@ -6,10 +6,15 @@ import ServicesInAbout from "@/components/ServicesInAbout";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import {  Pagination } from "swiper";
+import { Pagination } from "swiper";
 import ContactSlider from "@/components/ContactSlider";
 import Button from "@/components/Button";
 import Head from "next/head";
+import {
+  ClosedProjects,
+  ContactSliderData,
+  ServicesInAboutData,
+} from "@/data/data";
 
 const about = () => {
   return (
@@ -84,42 +89,11 @@ const about = () => {
               خدمات جدید طراحی گرافیک
             </div>
 
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی پوستر"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی لوگو"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی موشن گرافی"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی قالب پست"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی بنر سایت"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
-            <div className="col-12 col-md-4">
-              <ServicesInAbout
-                head="طراحی سه بعدی"
-                body="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-              />
-            </div>
+            {ServicesInAboutData.map((data, index) => (
+              <div className="col-12 col-md-4" key={index}>
+                <ServicesInAbout head={data.head} body={data.body} />
+              </div>
+            ))}
           </div>
           <div className="row pb-5">
             <div className="pt-5">
@@ -159,46 +133,16 @@ const about = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <ContactSlider
-                  theme="dark"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="dark"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="dark"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="dark"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
+              {ContactSliderData.map((data, index) => (
+                <SwiperSlide key={index}>
+                  <ContactSlider
+                    theme={data.theme}
+                    profileName={data.profile_name}
+                    profileSource={data.profile_source}
+                    sliderP={data.slider_paragraph}
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
           <div className="row">
@@ -208,54 +152,19 @@ const about = () => {
                   پروژه های بسته شده
                 </div>
                 <div className="row">
-                  <div className="col-12 col-md-4">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
-                  <div className="col-12 col-md-4">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
-                  <div className="col-12 col-md-4">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
-                  <div className="col-12 col-md-4 pt-md-3">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
-                  <div className="col-12 col-md-4 pt-md-3">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
-                  <div className="col-12 col-md-4 pt-md-3">
-                    <Image
-                      src="/static/img/logo/Rectangle 22.png"
-                      alt="co image"
-                      width={350}
-                      height={159}
-                    />
-                  </div>
+                  {ClosedProjects.map((data, index) => (
+                    <div className="col-12 col-md-4 pt-md-3" key={index}>
+                      <Image
+                        className={
+                          index == 3 || index == 4 || index == 5 ? "mt-4" : ""
+                        }
+                        src={data.co_image}
+                        alt={data.alt}
+                        width={data.width}
+                        height={data.height}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </section>

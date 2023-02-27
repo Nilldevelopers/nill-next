@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import BoxLight from "@/components/BoxLight";
-import styles from '@/styles/Home.module.css'
+import styles from "@/styles/Home.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +12,12 @@ import SliderItems from "@/components/SliderItems";
 import ContactSlider from "@/components/ContactSlider";
 import ProgressBar from "@/components/ProgressBar";
 import Button from "@/components/Button";
-
+import {
+  ClosedProjects,
+  HomeSliderItem,
+  HomeSliderItem2,
+  ProgressData,
+} from "@/data/data";
 
 export default function Home() {
   return (
@@ -33,7 +38,6 @@ export default function Home() {
             className="position-relative"
             src="/static/img/nasa-Q1p7bh3SHj8-unsplash.jpg"
             fill
-           
             alt="earth image"
           />
         </section>
@@ -64,7 +68,6 @@ export default function Home() {
                   width="500"
                   height="300"
                 />
-                
               </div>
             </div>
           </div>
@@ -176,80 +179,14 @@ export default function Home() {
                   modules={[Pagination]}
                   className="mySwiper"
                 >
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی Low Poly زومجی"
-                      imageSource="/static/img/project/Project_2.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی UI/UX شرکت Rainbow"
-                      imageSource="/static/img/project/Project_1.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
+                  {HomeSliderItem.map((data, index) => (
+                    <SwiperSlide key={index}>
+                      <SliderItems
+                        slidertxt={data.title}
+                        imageSource={data.image}
+                      />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>
@@ -308,46 +245,16 @@ export default function Home() {
               modules={[Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <ContactSlider
-                  theme="blue"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="blue"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="blue"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ContactSlider
-                  theme="blue"
-                  profileName="Andre Park"
-                  profileSource="/static/img/icons/LineStar.svg"
-                  sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است."
-                />
-              </SwiperSlide>
+              {HomeSliderItem2.map((data, index) => (
+                <SwiperSlide key={index}>
+                  <ContactSlider
+                    theme={data.theme}
+                    profileName={data.profile_name}
+                    profileSource={data.image}
+                    sliderP={data.slider_body}
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </section>
@@ -405,80 +312,14 @@ export default function Home() {
                   modules={[Pagination]}
                   className="mySwiper"
                 >
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی Low Poly زومجی"
-                      imageSource="/static/img/project/Project_2.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی UI/UX شرکت Rainbow"
-                      imageSource="/static/img/project/Project_1.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/static/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
+                  {HomeSliderItem.map((data, index) => (
+                    <SwiperSlide key={index}>
+                      <SliderItems
+                        slidertxt={data.title}
+                        imageSource={data.image}
+                      />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>
@@ -491,30 +332,11 @@ export default function Home() {
               پروژه های در حال انجام
             </div>
             <div className="row">
-              <div className="col-12 col-md-4">
-                {" "}
-                <ProgressBar load={70} title={"Nordea"} />
-              </div>
-              <div className="col-12 col-md-4">
-                {" "}
-                <ProgressBar load={90} title={"transit"} />
-              </div>
-              <div className="col-12 col-md-4">
-                {" "}
-                <ProgressBar load={35} title={"AliBaba"} />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                {" "}
-                <ProgressBar load={50} title={"FlyEmirates"} />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                {" "}
-                <ProgressBar load={80} title={"Zoomit"} />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                {" "}
-                <ProgressBar load={95} title={"Digi Kala"} />
-              </div>
+              {ProgressData.map((data, index) => (
+                <div className="col-12 col-md-4" key={index}>
+                  <ProgressBar load={data.load} title={data.title} />
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -525,54 +347,19 @@ export default function Home() {
               پروژه های بسته شده
             </div>
             <div className="row">
-              <div className="col-12 col-md-4">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
-              <div className="col-12 col-md-4">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
-              <div className="col-12 col-md-4">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
-              <div className="col-12 col-md-4 pt-md-3">
-                <Image
-                  src="/static/img/logo/Rectangle 22.png"
-                  alt="co image"
-                  width={350}
-                  height={159}
-                />
-              </div>
+              {ClosedProjects.map((data, index) => (
+                <div className="col-12 col-md-4" key={index}>
+                  <Image
+                    className={
+                      index == 3 || index == 4 || index == 5 ? "mt-4" : ""
+                    }
+                    src={data.co_image}
+                    alt={data.alt}
+                    width={data.width}
+                    height={data.height}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>

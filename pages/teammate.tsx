@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
+import { Skills } from "@/data/data";
 const teammate = () => {
   return (
     <>
@@ -145,15 +146,15 @@ const teammate = () => {
               </div>
               <div className="col-12 col-md-1"></div>
               <div className={`col-12 col-md-5 ${styles.bgGrey}`}>
-               <section>
-               <Image
-                  src="/static/img/profiles/profile_2.png"
-                  alt="favorite"
-                  width={528}
-                  height={516}
-                  id="profile_id"
-                />
-               </section>
+                <section>
+                  <Image
+                    src="/static/img/profiles/profile_2.png"
+                    alt="favorite"
+                    width={528}
+                    height={516}
+                    id="profile_id"
+                  />
+                </section>
                 <section className="px-5 ps-5">
                   <div>
                     <h1 className={`${styles.teammate_head} pt-5 pb-5`}>
@@ -269,28 +270,20 @@ const teammate = () => {
                       <div className="row" dir="ltr">
                         <div className="col-12 col-md-6">
                           <ul className={styles.skill}>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                            <li>JQuery</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Indesign</li>
-                            <li>After Effect</li>
+                            {Skills.map((data, index) => {
+                              if (index >= 0 && index < 6) {
+                                return <li key={index}>{data}</li>;
+                              }
+                            })}
                           </ul>
                         </div>
                         <div className="col-12 col-md-6">
                           <ul className={styles.skill}>
-                            <li>Premier Pro</li>
-                            <li>Adobe xd</li>
-                            <li>Figma</li>
-                            <li>InVision Studio</li>
-                            <li>Blender</li>
-                            <li>English (language)</li>
-                            <li>French (language)</li>
-                            <li>Team building</li>
-                            <li>Problem Solving</li>
+                          {Skills.map((data, index) => {
+                              if (index >= 6 && index < 12) {
+                                return <li key={index}>{data}</li>;
+                              }
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -311,7 +304,7 @@ const teammate = () => {
                     <Image
                       src="/static/img/favorite_1.png"
                       alt="favorite"
-                      layout="fill"
+                      fill
                       className="custom-img"
                     />
                   </div>
@@ -319,7 +312,7 @@ const teammate = () => {
                     <Image
                       src="/static/img/favorite_2.png"
                       alt="favorite"
-                      layout="fill"
+                      fill
                       className="custom-img"
                     />
                   </div>
@@ -327,7 +320,7 @@ const teammate = () => {
                     <Image
                       src="/static/img/favorite_4.png"
                       alt="favorite"
-                      layout="fill"
+                      fill
                       className="custom-img"
                     />
                   </div>
@@ -335,7 +328,7 @@ const teammate = () => {
                     <Image
                       src="/static/img/favorite_3.png"
                       alt="favorite"
-                      layout="fill"
+                      fill
                       className="custom-img"
                     />
                   </div>

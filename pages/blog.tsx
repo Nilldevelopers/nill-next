@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import Head from "next/head";
+import { BlogData } from "@/data/data";
 
 const blog = () => {
   return (
@@ -49,7 +50,7 @@ const blog = () => {
             <div className="row pt-2">
               <Image
                 src="/static/img/blog/image 12.png"
-                layout='fill'
+                layout="fill"
                 alt="dd"
                 className="custom-img"
               />
@@ -62,167 +63,34 @@ const blog = () => {
                 در ستون و سطرآنچنان که لازم است.
               </p>
             </div>
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/static/img/blog/Rectangle 46.png"
-                  alt="rectangle photo"
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
+            {BlogData.map((data, index) => (
+              <div key={index}>
+                <hr id="blog_h_line" />
+                <div className="row">
+                  <div className="d-flex flex-row align-items-center">
+                    <Image
+                      src={data.image.source}
+                      alt={data.image.alt}
+                      width={data.image.width}
+                      height={data.image.height}
+                    />
+                    <div className="d-flex flex-column pe-4">
+                      <div>
+                        <span className={styles.blogDateTime}>{data.date}</span>
+                      </div>
+                      <div>
+                        <h5 className={styles.blogHeadTitle}>{data.title}</h5>
+                      </div>
+                      <div>
+                        <p className={styles.blogBodyTxt}>{data.body}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
 
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/static/img/blog/Rectangle 46.png"
-                  alt=""
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/static/img/blog/Rectangle 46.png"
-                  alt=""
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/static/img/blog/Rectangle 46.png"
-                  alt=""
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/static/img/blog/Rectangle 46.png"
-                  alt=""
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr id="blog_h_line" className="mb-5" />
+            {/* <hr id="blog_h_line" className="mb-5" /> */}
           </div>
         </section>
       </main>

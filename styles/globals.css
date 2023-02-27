@@ -169,7 +169,7 @@ a {
 /* about page */
 
 .bg-team {
-    background-image: url("/public/img/about/1.png");
+    background-image: url("/public/static/img/about/1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;

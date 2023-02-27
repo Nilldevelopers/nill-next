@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import { tagItems } from "@/data/data";
+import { ChatCommentsData, HomeSliderItem, tagItems } from "@/data/data";
 import ChatComments from "@/components/ChatComments";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderItems from "@/components/SliderItems";
@@ -22,7 +22,7 @@ const post = () => {
           alt=""
           src="/static/img/post/Rectangle 62.png"
           className="custom-img"
-          layout='fill'
+          layout="fill"
         />
 
         <div className="container">
@@ -61,7 +61,7 @@ const post = () => {
               src="/static/img/post/Rectangle 67.png"
               alt="dd"
               className="custom-img"
-              layout='fill'
+              layout="fill"
             />
           </div>
           <div className="row">
@@ -100,68 +100,58 @@ const post = () => {
               src="/static/img/post/Rectangle 69.png"
               alt="dd"
               className="custom-img"
-              layout='fill'
+              fill
             />
           </div>
           <div className="pt-3"></div>
           <div className="row">
             <Image
               src="/static/img/post/Rectangle 70.png"
-              layout='fill'
+              fill
               alt="dd"
               className="custom-img pb-5"
             />
           </div>
 
           <div className="row pb-3">
-            <div className="pt-5">
-              <ChatComments
-                comment="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است."
-                date="28 November"
-                liked={false}
-                username="Andre Park"
-              />
-
-              <div className="pt-5">
-                <div className="d-flex flex-row align-items-center">
-                  <div className="contents ps-3">
-                    <Image
-                      src="/static/img/icons/SpecialReply.svg"
-                      width={150}
-                      height={150}
-                      alt=""
-                    />
+            {ChatCommentsData.map((data, index) => {
+              if (index == 1) {
+                return (
+                  <div
+                    className="pt-5 d-flex flex-row align-items-center"
+                    key={index}
+                  >
+                    <div className="contents ps-3">
+                      <Image
+                        src={data.image.source}
+                        width={data.image.width}
+                        height={data.image.height}
+                        alt={data.image.alt}
+                      />
+                    </div>
+                    <div className="col-span-2">
+                      <ChatComments
+                        comment={data.comment}
+                        date={data.date}
+                        liked={data.liked}
+                        username={data.username}
+                      />
+                    </div>
                   </div>
-                  <div className="col-span-2 ...">
+                );
+              } else {
+                return (
+                  <div className="pt-5" key={index}>
                     <ChatComments
-                      comment="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-"
-                      date="28 November"
-                      liked={false}
-                      username="Andre Park"
+                      comment={data.comment}
+                      date={data.date}
+                      liked={data.liked}
+                      username={data.username}
                     />
                   </div>
-                </div>
-                <div className="pt-5">
-                  <ChatComments
-                    comment="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-"
-                    date="28 November"
-                    liked={false}
-                    username="Andre Park"
-                  />
-                </div>
-                <div className="pt-5">
-                  <ChatComments
-                    comment="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-"
-                    date="28 November"
-                    liked={false}
-                    username="Andre Park"
-                  />
-                </div>
-              </div>
-            </div>
+                );
+              }
+            })}
           </div>
 
           <div className="row pt-5 pb-5">
@@ -227,80 +217,14 @@ const post = () => {
                 className="mySwiper"
                 id="post_slider"
               >
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی Low Poly زومجی"
-                    imageSource="/static/img/project/Project_2.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی UI/UX شرکت Rainbow"
-                    imageSource="/static/img/project/Project_1.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/static/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
+                {HomeSliderItem.map((data, index) => (
+                  <SwiperSlide key={index}>
+                    <SliderItems
+                      slidertxt={data.title}
+                      imageSource={data.image}
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
