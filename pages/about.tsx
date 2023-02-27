@@ -163,7 +163,7 @@ const about = () => {
                 <ContactSlider
                   theme="dark"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -173,7 +173,7 @@ const about = () => {
                 <ContactSlider
                   theme="dark"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -183,7 +183,7 @@ const about = () => {
                 <ContactSlider
                   theme="dark"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -193,7 +193,7 @@ const about = () => {
                 <ContactSlider
                   theme="dark"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -210,7 +210,7 @@ const about = () => {
                 <div className="row">
                   <div className="col-12 col-md-4">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}
@@ -218,7 +218,7 @@ const about = () => {
                   </div>
                   <div className="col-12 col-md-4">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}
@@ -226,7 +226,7 @@ const about = () => {
                   </div>
                   <div className="col-12 col-md-4">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}
@@ -234,7 +234,7 @@ const about = () => {
                   </div>
                   <div className="col-12 col-md-4 pt-md-3">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}
@@ -242,7 +242,7 @@ const about = () => {
                   </div>
                   <div className="col-12 col-md-4 pt-md-3">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}
@@ -250,7 +250,7 @@ const about = () => {
                   </div>
                   <div className="col-12 col-md-4 pt-md-3">
                     <Image
-                      src="/img/logo/Rectangle 22.png"
+                      src="/static/img/logo/Rectangle 22.png"
                       alt="co image"
                       width={350}
                       height={159}

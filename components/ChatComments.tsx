@@ -7,7 +7,7 @@ const ChatComments = (props: ChatCommentType) => {
       <div className={`${styles.bgGrey} p-5 ${props.className}`}>
         <div className="d-flex flex-row pb-5">
           <Image
-            src="/img/profiles/profile_1.png"
+            src="/static/img/profiles/profile_1.png"
             alt=""
             width={90}
             height={90}
@@ -22,14 +22,14 @@ const ChatComments = (props: ChatCommentType) => {
         </div>
         <div className="d-flex flex-row-reverse">
           <Image
-            src="/img/icons/FillHeart.svg"
+            src="/static/img/icons/FillHeart.svg"
             alt="like icon"
             className="pe-5"
             width={30}
             height={30}
           />
           <Image
-            src="/img/icons/Reply.svg"
+            src="/static/img/icons/Reply.svg"
             alt="reply icon"
             width={30}
             height={30}
@@ -42,7 +42,7 @@ const ChatComments = (props: ChatCommentType) => {
       <div className={`${styles.bgGrey} p-5 ${props.className}`}>
         <div className="d-flex flex-row pb-5">
           <Image
-            src="/img/profiles/profile_1.png"
+            src="/static/img/profiles/profile_1.png"
             alt=""
             width={90}
             height={90}
@@ -58,14 +58,14 @@ const ChatComments = (props: ChatCommentType) => {
         <div className="d-flex flex-row-reverse">
           <div className="pe-5">
             <Image
-              src="/img/icons/NullHeart.svg"
+              src="/static/img/icons/NullHeart.svg"
               alt="like icon"
               width={30}
               height={30}
             />
           </div>
           <Image
-            src="/img/icons/Reply.svg"
+            src="/static/img/icons/Reply.svg"
             alt="reply icon"
             width={30}
             height={30}

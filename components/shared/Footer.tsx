@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div>
               <Image
-                src="/img/logo/NILL.svg"
+                src="/static/img/logo/NILL.svg"
                 width={100}
                 height={100}
                 alt={"NILL logo"}

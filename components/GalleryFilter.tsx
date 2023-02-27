@@ -4,32 +4,32 @@ import Image from "next/image";
 const portfolio = [
   {
     name: "My best client",
-    image: "/img/work/Rectangle 54.png",
+    image: "/static/img/work/Rectangle 54.png",
     category: ["all", "ux-ui"],
   },
   {
     name: "My favorite case",
-    image: "/img/work/Rectangle 55.png",
+    image: "/static/img/work/Rectangle 55.png",
     category: ["all", "graphic", "ux-ui"],
   },
   {
     name: "A old job",
-    image: "/img/work/Rectangle 56.png",
+    image: "/static/img/work/Rectangle 56.png",
     category: ["all", "webdesign"],
   },
   {
     name: "It is a really cool website",
-    image: "/img/work/Rectangle 57.png",
+    image: "/static/img/work/Rectangle 57.png",
     category: ["all", "ux-ui", "graphic", "3d", "seo"],
   },
   {
     name: "Something more",
-    image: "/img/work/Rectangle 58.png",
+    image: "/static/img/work/Rectangle 58.png",
     category: ["all", "3d"],
   },
   {
     name: "Something more",
-    image: "/img/work/Rectangle 59.png",
+    image: "/static/img/work/Rectangle 59.png",
     category: ["all", "3d", "graphic"],
   },
 ];

@@ -1,21 +1,5 @@
 import type { AppProps } from 'next/app'
-
-
-
 import Head from "next/head";
-import '@/styles/bootstrap.min.css'
-import '@/styles/slider/sliderItem.css'
-import '@/styles/slider/contactSlider.css'
-import '@/styles/slider/customizeSlider.css'
-import '@/styles/button.css'
-import '@/styles/progress.css'
-import '@/styles/navbar/nav.css'
-import '@/styles/chatComments.css'
-import '@/styles/responsive.css'
-import '@/styles/globals.css'
-import '@/styles/animate_icon.scss'
-
-import "bootstrap/dist/css/bootstrap.css";
 import Script from "next/script";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
@@ -23,6 +7,9 @@ import Navbar from "@/components/shared/Navbar";
 import Router from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
+import 'swiper/css'
+import 'swiper/css/pagination'
+import "bootstrap/dist/css/bootstrap.css"
 // add now
 // import { useState } from "react";
 // import { gsap } from "gsap-trial";
@@ -30,6 +17,8 @@ import "nprogress/nprogress.css"; //styles of nprogress
 // import { ScrollSmoother } from "gsap-trial/dist/ScrollSmoother";
 import { SmootherContext } from "../components/SmootherContext";
 // import { useIsomorphicLayoutEffect } from "../components/useIsomorphicLayoutEffect";
+import '@/styles/globals.css'
+import '@/styles/animate_icon.scss'
 
 //Binding events.
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -52,7 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
   // }, []);
 
   return (
-    <div dir="rtl">
+    <div>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="keywords" content="your, tags" />

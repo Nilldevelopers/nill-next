@@ -22,7 +22,7 @@ const Navbar = () => {
           >
             <div className="logo-present">
               <Image
-                src="/img/logo/NILL.svg"
+                src="/static/img/logo/NILL.svg"
                 width={70}
                 height={70}
                 alt={"NILL logo"}

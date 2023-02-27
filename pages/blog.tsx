@@ -48,7 +48,7 @@ const blog = () => {
 
             <div className="row pt-2">
               <Image
-                src="/img/blog/image 12.png"
+                src="/static/img/blog/image 12.png"
                 layout='fill'
                 alt="dd"
                 className="custom-img"
@@ -67,7 +67,39 @@ const blog = () => {
             <div className="row">
               <div className="d-flex flex-row align-items-center">
                 <Image
-                  src="/img/blog/Rectangle 46.png"
+                  src="/static/img/blog/Rectangle 46.png"
+                  alt="rectangle photo"
+                  width={353}
+                  height={185}
+                />
+                <div className="d-flex flex-column pe-4">
+                  <div>
+                    <span className={styles.blogDateTime}>
+                      December 04, 2022
+                    </span>
+                  </div>
+                  <div>
+                    <h5 className={styles.blogHeadTitle}>
+                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
+                    </h5>
+                  </div>
+                  <div>
+                    <p className={styles.blogBodyTxt}>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr id="blog_h_line" />
+
+            <div className="row">
+              <div className="d-flex flex-row align-items-center">
+                <Image
+                  src="/static/img/blog/Rectangle 46.png"
                   alt=""
                   width={353}
                   height={185}
@@ -99,7 +131,7 @@ const blog = () => {
             <div className="row">
               <div className="d-flex flex-row align-items-center">
                 <Image
-                  src="/img/blog/Rectangle 46.png"
+                  src="/static/img/blog/Rectangle 46.png"
                   alt=""
                   width={353}
                   height={185}
@@ -131,7 +163,7 @@ const blog = () => {
             <div className="row">
               <div className="d-flex flex-row align-items-center">
                 <Image
-                  src="/img/blog/Rectangle 46.png"
+                  src="/static/img/blog/Rectangle 46.png"
                   alt=""
                   width={353}
                   height={185}
@@ -163,39 +195,7 @@ const blog = () => {
             <div className="row">
               <div className="d-flex flex-row align-items-center">
                 <Image
-                  src="/img/blog/Rectangle 46.png"
-                  alt=""
-                  width={353}
-                  height={185}
-                />
-                <div className="d-flex flex-column pe-4">
-                  <div>
-                    <span className={styles.blogDateTime}>
-                      December 04, 2022
-                    </span>
-                  </div>
-                  <div>
-                    <h5 className={styles.blogHeadTitle}>
-                      قابلیت جدیدی که در انتظار توسعه دهندگان وب است!
-                    </h5>
-                  </div>
-                  <div>
-                    <p className={styles.blogBodyTxt}>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr id="blog_h_line" />
-
-            <div className="row">
-              <div className="d-flex flex-row align-items-center">
-                <Image
-                  src="/img/blog/Rectangle 46.png"
+                  src="/static/img/blog/Rectangle 46.png"
                   alt=""
                   width={353}
                   height={185}

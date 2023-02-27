@@ -8,8 +8,8 @@ const ContactSlider = (props: IContactSlider) => {
         <div className="position-relative">
           <Image
             className="position-relative z-10 right-0 top-11"
-            src="/img/icons/DoubleCoutYellow.svg"
-            alt="ss"
+            src="/static/img/icons/DoubleCoutYellow.svg"
+            alt="double couth yellow"
             width={30}
             height={30}
           />
@@ -18,8 +18,8 @@ const ContactSlider = (props: IContactSlider) => {
               <div>
                 <div className="d-flex flex-row align-items-center">
                   <Image
-                    src={"/img/profiles/profile_1.png"}
-                    alt="tt"
+                    src="/static/img/profiles/profile_1.png"
+                    alt="profile photo"
                     width={66}
                     height={66}
                   />
@@ -30,7 +30,7 @@ const ContactSlider = (props: IContactSlider) => {
                     <div>
                       <Image
                         src={props.profileSource}
-                        alt=""
+                        alt="profile picture"
                         width={140}
                         height={35}
                       />
@@ -52,8 +52,8 @@ const ContactSlider = (props: IContactSlider) => {
         <div className="position-relative">
           <Image
             className="position-relative z-11 right-0 top-11"
-            src="/img/icons/DoubleCout.svg"
-            alt=""
+            src="/static/img/icons/DoubleCout.svg"
+            alt="double couth icon"
             width={30}
             height={30}
           />
@@ -62,8 +62,8 @@ const ContactSlider = (props: IContactSlider) => {
               <div>
                 <div className="d-flex flex-row align-items-center">
                   <Image
-                    src="/img/profiles/profile_1.png"
-                    alt=""
+                    src="/static/img/profiles/profile_1.png"
+                    alt="profile photo"
                     width={66}
                     height={66}
                   />

@@ -31,7 +31,7 @@ export default function Home() {
 
           <Image
             className="position-relative"
-            src="/img/nasa-Q1p7bh3SHj8-unsplash.jpg"
+            src="/static/img/nasa-Q1p7bh3SHj8-unsplash.jpg"
             fill
            
             alt="earth image"
@@ -59,7 +59,7 @@ export default function Home() {
               <div className="col-md-1"></div>
               <div className="col-12 col-md-5">
                 <Image
-                  src="/img/nill-card.png"
+                  src="/static/img/nill-card.png"
                   alt="nill developers image"
                   width="500"
                   height="300"
@@ -98,21 +98,21 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-4 pr-md-3">
                 <BoxLight
-                  icon_path="/img/icons/Dashboard.svg"
+                  icon_path="/static/img/icons/Dashboard.svg"
                   head="Web Design"
                   pragraph="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است."
                 />
               </div>
               <div className="col-12 col-md-4 pr-md-3">
                 <BoxLight
-                  icon_path="/img/icons/Theme.svg"
+                  icon_path="/static/img/icons/Theme.svg"
                   head="Graphic & UI/UX Design"
                   pragraph="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است."
                 />
               </div>
               <div className="col-12 col-md-4 pr-md-3">
                 <BoxLight
-                  icon_path="/img/icons/AR.svg"
+                  icon_path="/static/img/icons/AR.svg"
                   head="3D Design & Modeling"
                   pragraph="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است."
                 />
@@ -179,75 +179,75 @@ export default function Home() {
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی Low Poly زومجی"
-                      imageSource="/img/project/Project_2.png"
+                      imageSource="/static/img/project/Project_2.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی UI/UX شرکت Rainbow"
-                      imageSource="/img/project/Project_1.png"
+                      imageSource="/static/img/project/Project_1.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                 </Swiper>
@@ -312,7 +312,7 @@ export default function Home() {
                 <ContactSlider
                   theme="blue"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -322,7 +322,7 @@ export default function Home() {
                 <ContactSlider
                   theme="blue"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -332,7 +332,7 @@ export default function Home() {
                 <ContactSlider
                   theme="blue"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -342,7 +342,7 @@ export default function Home() {
                 <ContactSlider
                   theme="blue"
                   profileName="Andre Park"
-                  profileSource="/img/icons/LineStar.svg"
+                  profileSource="/static/img/icons/LineStar.svg"
                   sliderP="   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است."
@@ -408,75 +408,75 @@ export default function Home() {
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی Low Poly زومجی"
-                      imageSource="/img/project/Project_2.png"
+                      imageSource="/static/img/project/Project_2.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی UI/UX شرکت Rainbow"
-                      imageSource="/img/project/Project_1.png"
+                      imageSource="/static/img/project/Project_1.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <SliderItems
-                      slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <SliderItems
                       slidertxt="طراحی ست اداری شرکت hydout"
-                      imageSource="/img/project/Project_3.png"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <SliderItems
+                      slidertxt="طراحی ست اداری شرکت hydout"
+                      imageSource="/static/img/project/Project_3.png"
                     />
                   </SwiperSlide>
                 </Swiper>
@@ -527,7 +527,7 @@ export default function Home() {
             <div className="row">
               <div className="col-12 col-md-4">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}
@@ -535,7 +535,7 @@ export default function Home() {
               </div>
               <div className="col-12 col-md-4">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}
@@ -543,7 +543,7 @@ export default function Home() {
               </div>
               <div className="col-12 col-md-4">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}
@@ -551,7 +551,7 @@ export default function Home() {
               </div>
               <div className="col-12 col-md-4 pt-md-3">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}
@@ -559,7 +559,7 @@ export default function Home() {
               </div>
               <div className="col-12 col-md-4 pt-md-3">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}
@@ -567,7 +567,7 @@ export default function Home() {
               </div>
               <div className="col-12 col-md-4 pt-md-3">
                 <Image
-                  src="/img/logo/Rectangle 22.png"
+                  src="/static/img/logo/Rectangle 22.png"
                   alt="co image"
                   width={350}
                   height={159}

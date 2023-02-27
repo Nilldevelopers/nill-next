@@ -147,7 +147,7 @@ const teammate = () => {
               <div className={`col-12 col-md-5 ${styles.bgGrey}`}>
                <section>
                <Image
-                  src="/img/profiles/profile_2.png"
+                  src="/static/img/profiles/profile_2.png"
                   alt="favorite"
                   width={528}
                   height={516}
@@ -309,7 +309,7 @@ const teammate = () => {
                 <div className="row">
                   <div className="col-12 col-md-4">
                     <Image
-                      src="/img/favorite_1.png"
+                      src="/static/img/favorite_1.png"
                       alt="favorite"
                       layout="fill"
                       className="custom-img"
@@ -317,7 +317,7 @@ const teammate = () => {
                   </div>
                   <div className="col-12 col-md-8">
                     <Image
-                      src="/img/favorite_2.png"
+                      src="/static/img/favorite_2.png"
                       alt="favorite"
                       layout="fill"
                       className="custom-img"
@@ -325,7 +325,7 @@ const teammate = () => {
                   </div>
                   <div className="col-12 col-md-8 pt-4">
                     <Image
-                      src="/img/favorite_4.png"
+                      src="/static/img/favorite_4.png"
                       alt="favorite"
                       layout="fill"
                       className="custom-img"
@@ -333,7 +333,7 @@ const teammate = () => {
                   </div>
                   <div className="col-12 col-md-4 pt-4">
                     <Image
-                      src="/img/favorite_3.png"
+                      src="/static/img/favorite_3.png"
                       alt="favorite"
                       layout="fill"
                       className="custom-img"

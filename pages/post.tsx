@@ -20,7 +20,7 @@ const post = () => {
       <main>
         <Image
           alt=""
-          src="/img/post/Rectangle 62.png"
+          src="/static/img/post/Rectangle 62.png"
           className="custom-img"
           layout='fill'
         />
@@ -58,8 +58,7 @@ const post = () => {
           </div>
           <div className="row">
             <Image
-              src="/img/post/Rectangle 67.png"
-              
+              src="/static/img/post/Rectangle 67.png"
               alt="dd"
               className="custom-img"
               layout='fill'
@@ -98,7 +97,7 @@ const post = () => {
 
           <div className="row">
             <Image
-              src="/img/post/Rectangle 69.png"
+              src="/static/img/post/Rectangle 69.png"
               alt="dd"
               className="custom-img"
               layout='fill'
@@ -107,7 +106,7 @@ const post = () => {
           <div className="pt-3"></div>
           <div className="row">
             <Image
-              src="/img/post/Rectangle 70.png"
+              src="/static/img/post/Rectangle 70.png"
               layout='fill'
               alt="dd"
               className="custom-img pb-5"
@@ -127,7 +126,7 @@ const post = () => {
                 <div className="d-flex flex-row align-items-center">
                   <div className="contents ps-3">
                     <Image
-                      src="/img/icons/SpecialReply.svg"
+                      src="/static/img/icons/SpecialReply.svg"
                       width={150}
                       height={150}
                       alt=""
@@ -167,7 +166,7 @@ const post = () => {
 
           <div className="row pt-5 pb-5">
             <Image
-              src="/img/icons/DrowDown.svg"
+              src="/static/img/icons/DrowDown.svg"
               width={30}
               height={30}
               alt="icon drow down"
@@ -231,75 +230,75 @@ const post = () => {
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی Low Poly زومجی"
-                    imageSource="/img/project/Project_2.png"
+                    imageSource="/static/img/project/Project_2.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی UI/UX شرکت Rainbow"
-                    imageSource="/img/project/Project_1.png"
+                    imageSource="/static/img/project/Project_1.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <SliderItems
-                    slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <SliderItems
                     slidertxt="طراحی ست اداری شرکت hydout"
-                    imageSource="/img/project/Project_3.png"
+                    imageSource="/static/img/project/Project_3.png"
+                  />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <SliderItems
+                    slidertxt="طراحی ست اداری شرکت hydout"
+                    imageSource="/static/img/project/Project_3.png"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <SliderItems
+                    slidertxt="طراحی ست اداری شرکت hydout"
+                    imageSource="/static/img/project/Project_3.png"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <SliderItems
+                    slidertxt="طراحی ست اداری شرکت hydout"
+                    imageSource="/static/img/project/Project_3.png"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <SliderItems
+                    slidertxt="طراحی ست اداری شرکت hydout"
+                    imageSource="/static/img/project/Project_3.png"
                   />
                 </SwiperSlide>
               </Swiper>
